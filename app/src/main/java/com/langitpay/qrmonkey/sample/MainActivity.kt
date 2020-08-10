@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val apiKey = "QxOSwTnfJImshM6ZqDPFOe5ravp6p1T11xujsnogboJsBrFYZn"
+        val apiKey = "api-key"
         val qrMonkey = QrMonkey(this, apiKey, object : QrListener {
             override fun onSuccess(bitmap: Bitmap) {
                 image_view.setImageBitmap(bitmap)
